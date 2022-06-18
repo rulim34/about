@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: theme(colors.cornflower-blue) theme(colors.vampire-black);
+  }
+
+  body::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  body::-webkit-scrollbar-track {
+    @apply bg-vampire-black;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    @apply bg-slate-600 border-2 border-solid border-vampire-black rounded-xl;
+  }
+
+  body::-webkit-scrollbar-thumb:hover {
+    @apply bg-cornflower-blue;
+  }
+
+  a {
+    @apply inline-block box-border transition-all;
+  }
+
+  a:focus {
+    @apply outline-dashed outline-2 outline-offset-4 outline-cornflower-blue;
+  }
+
+  a:focus:not(:focus-visible):not(:active) {
+    @apply outline-none outline-offset-0;
+  }
+
+  a:focus-visible {
+    @apply outline-dashed outline-2 outline-offset-4 outline-cornflower-blue;
+  }
+
+  a:active {
+    @apply outline outline-2 outline-offset-4 outline-cornflower-blue;
+  }
+}
+
+@layer components {
+  .button {
+    @apply px-3.5 py-2 bg-transparent border-solid border-2 border-cornflower-blue font-mono font-semibold text-sm text-cornflower-blue rounded-lg;
+  }
+
+  .button:hover,
+  .button:focus,
+  .button:focus-visible {
+    @apply bg-cornflower-blue border-transparent text-vampire-black;
+  }
+
+  .link {
+    @apply text-cornflower-blue;
+  }
+
+  .link::after {
+    @apply content-[''] relative block w-0 h-[1px] mx-auto bottom-1 bg-cornflower-blue opacity-80 transition-all;
+  }
+
+  .link:focus,
+  .link:focus-visible,
+  .link:active {
+    @apply outline-none outline-0 outline-offset-0;
+  }
+
+  .link:hover::after,
+  .link:focus::after,
+  .link:focus-visible::after,
+  .link:active::after {
+    @apply w-full;
+  }
+}
