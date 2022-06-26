@@ -1,4 +1,4 @@
-import { Icon } from '../core';
+import { ChevronRight } from 'react-feather';
 
 type Props = {
   isBusiness: boolean;
@@ -50,7 +50,7 @@ export function About({ isBusiness, skills }: Props) {
         {skills &&
           skills.map((skill, i) => (
             <li key={i} className="flex flex-nowrap">
-              <Icon name="chevron-right" className="w-4 h-4 mt-1 mr-2 text-cornflower-blue" />
+              <ChevronRight className="w-4 h-4 mt-1 mr-2 text-cornflower-blue" />
               <p className="flex-grow text-slate-400 font-mono">{skill}</p>
             </li>
           ))}
