@@ -25,8 +25,10 @@
     @apply bg-cornflower-blue;
   }
 
-  a {
+  a,
+  button {
     @apply inline-block box-border transition-all;
+    -webkit-tap-highlight-color: transparent;
   }
 
   a:focus,
