@@ -18,7 +18,7 @@ export function Social({ className, socialMedia }: Props) {
             <li key={i}>
               <a
                 href={url}
-                className={`group mr-7 my-2 inline-block rounded-sm hover:-translate-y-1 focus:-translate-y-1 focus:outline-offset-8 !active:outline-offset-8`}
+                className={`group mr-7 my-2 inline-block rounded-sm hover:-translate-y-1 focus:-translate-y-1 focus:outline-offset-8 active:outline-offset-8`}
                 aria-label={name}
                 target="_blank"
                 rel="noreferrer"
