@@ -7,7 +7,7 @@ type Props = {
 
 export function About({ isBusiness, skills }: Props) {
   return (
-    <section className="max-w-5xl mx-auto py-14 xs:py-20 md:py-24">
+    <section id="about" className="max-w-5xl mx-auto py-14 xs:py-20 md:py-24">
       <h2 className="text-slate-50 text-3xl text-center font-bold">About Me</h2>
 
       <div>

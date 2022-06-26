@@ -8,9 +8,9 @@ export default function Home() {
   const isBusiness = query.utm_campaign === 'business' ? true : false;
 
   return (
-    <Layout pathname={pathname} isBusiness={isBusiness}>
-      <Hero isBusiness={isBusiness} />
-      <About isBusiness={isBusiness} skills={Config.skills} />
+    <Layout pathname={pathname} navLinks={Config.nav} isBusiness={isBusiness}>
+      <Hero socialMedia={Config.social} isBusiness={isBusiness} />
+      <About skills={Config.skills} isBusiness={isBusiness} />
       <Contact />
     </Layout>
   );

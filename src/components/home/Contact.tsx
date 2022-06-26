@@ -2,7 +2,10 @@ import { Config } from '../../config';
 
 export function Contact() {
   return (
-    <section className="max-w-2xl mx-auto mb-14 py-14 text-center xs:py-20 md:mb-20 md:py-24">
+    <section
+      id="contact"
+      className="max-w-2xl mx-auto mb-14 py-14 text-center xs:py-20 md:mb-20 md:py-24"
+    >
       <h2 className="text-slate-50 text-3xl text-center font-bold">Contact</h2>
 
       <p className="mt-10 text-slate-400 text-lg text-center">

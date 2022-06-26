@@ -9,6 +9,16 @@ export const Config = {
     image: '',
     twitter: '@rulim34',
   },
+  nav: [
+    {
+      name: 'About',
+      url: '#about',
+    },
+    {
+      name: 'Blog',
+      url: 'https://blog.rulim34.dev',
+    },
+  ],
   social: [
     {
       icon: 'github',

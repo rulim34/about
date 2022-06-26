@@ -29,19 +29,23 @@
     @apply inline-block box-border transition-all;
   }
 
-  a:focus {
+  a:focus,
+  button:focus {
     @apply outline-dashed outline-2 outline-offset-4 outline-cornflower-blue;
   }
 
-  a:focus:not(:focus-visible):not(:active) {
+  a:focus:not(:focus-visible):not(:active),
+  button:focus:not(:focus-visible):not(:active) {
     @apply outline-none outline-offset-0;
   }
 
-  a:focus-visible {
+  a:focus-visible,
+  button:focus-visible {
     @apply outline-dashed outline-2 outline-offset-4 outline-cornflower-blue;
   }
 
-  a:active {
+  a:active,
+  button:active {
     @apply outline outline-2 outline-offset-4 outline-cornflower-blue;
   }
 }
@@ -76,5 +80,27 @@
   .link:focus-visible::after,
   .link:active::after {
     @apply w-full;
+  }
+
+  .menu {
+    @apply fixed flex items-center justify-center right-6 bottom-6 z-20 h-11 w-11 bg-cornflower-blue border-none rounded-full md:hidden;
+  }
+
+  .navmenu {
+    @apply fixed right-4 bottom-4 p-4 bg-slate-800 rounded-xl transition-transform md:hidden;
+  }
+
+  .navmenu:not(.open) {
+    @apply translate-x-full invisible;
+  }
+
+  .navlink {
+    @apply px-3.5 py-2 bg-transparent font-mono font-semibold text-base text-slate-50 rounded-lg;
+  }
+
+  .navlink:hover,
+  .navlink:focus,
+  .navlink:focus-visible {
+    @apply text-cornflower-blue;
   }
 }

@@ -3,17 +3,30 @@ import { ReactNode } from 'react';
 import { Config } from '../../config';
 import { Header } from './Header';
 import { Footer } from './Footer';
+import { Menu } from './Menu';
 
 type Props = {
   pathname: string;
   title?: string;
   description?: string;
   image?: string;
+  navLinks?: {
+    name: string;
+    url: string;
+  }[];
   isBusiness?: boolean;
   children?: ReactNode;
 };
 
-export function Layout({ pathname, title, description, image, isBusiness, children }: Props) {
+export function Layout({
+  pathname,
+  title,
+  description,
+  image,
+  navLinks,
+  isBusiness,
+  children,
+}: Props) {
   const siteTitle = isBusiness ? Config.site.title.business : Config.site.title.personal;
   const seo = {
     title: title ? `${title} - ${siteTitle}` : siteTitle,
@@ -54,12 +67,11 @@ export function Layout({ pathname, title, description, image, isBusiness, childr
       </a>
 
       <div className="bg-vampire-black">
-        <Header />
-
+        <Header navLinks={navLinks} />
+        <Menu navLinks={navLinks} />
         <main id="content" className="px-6 xs:px-12 md:px-24 lg:px-36">
           {children}
         </main>
-
         <Footer />
       </div>
     </>
