@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: ['./src/pages/**/*.{ts,tsx}', './src/components/**/*.{ts,tsx}'],
   theme: {
@@ -15,6 +17,10 @@ module.exports = {
       colors: {
         'cornflower-blue': '#6f8cf7',
         'vampire-black': '#050505',
+      },
+      fontFamily: {
+        sans: ['Ubuntu', ...defaultTheme.fontFamily.sans],
+        mono: ['Source Code Pro', ...defaultTheme.fontFamily.mono],
       },
     },
   },
