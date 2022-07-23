@@ -3,17 +3,17 @@
   "description": "Personal Website",
   "version": "0.1.0",
   "author": "Ahmad Rulim <personal@rulim34.dev>",
-  "private": true,
+  "license": "GPL-3.0-or-later",
   "repository": {
     "type": "git",
     "url": "https://github.com/rulim34/about"
   },
-  "license": "GPL-3.0-or-later",
   "scripts": {
+    "lint": "next lint",
+    "format": "next lint --fix",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
   },
   "dependencies": {
     "@icons-pack/react-simple-icons": "^5.2.0",
