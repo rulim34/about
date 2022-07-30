@@ -58,6 +58,7 @@
         "github-actions"
       ],
       "labels": [
+        "dependencies",
         "github actions"
       ]
     }
