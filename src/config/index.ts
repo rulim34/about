@@ -28,7 +28,7 @@ export const Config = {
     {
       icon: 'linkedin',
       name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/rulim34/',
+      url: 'https://www.linkedin.com/in/falkia34/',
     },
     {
       icon: 'xda-developers',
