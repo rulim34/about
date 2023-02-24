@@ -1,12 +1,10 @@
+import Link from 'next/link';
 import { Icon } from '@/presentation/components/shared';
+import { SocialMedia } from '@/domain/entities';
 
 type Props = {
   className?: string;
-  socialMedia: {
-    icon: string;
-    name: string;
-    url: string;
-  }[];
+  socialMedia: SocialMedia[];
 };
 
 export function Social({ className, socialMedia }: Props) {
@@ -16,7 +14,7 @@ export function Social({ className, socialMedia }: Props) {
         {socialMedia &&
           socialMedia.map(({ icon, name, url }, i) => (
             <li key={i}>
-              <a
+              <Link
                 href={url}
                 className={`group mr-7 my-2 inline-block rounded-sm hover:-translate-y-1 focus:-translate-y-1 focus:outline-offset-8 active:outline-offset-8`}
                 aria-label={name}
@@ -27,7 +25,7 @@ export function Social({ className, socialMedia }: Props) {
                   name={icon}
                   className="w-6 h-6 fill-slate-400 transition-all group-hover:fill-cornflower-blue group-focus:fill-cornflower-blue"
                 />
-              </a>
+              </Link>
             </li>
           ))}
       </ul>

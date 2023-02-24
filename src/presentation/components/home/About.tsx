@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { ChevronRight } from 'react-feather';
 
 type Props = {
@@ -24,9 +25,9 @@ export function About({ skills }: Props) {
 
         <p className="mt-4 text-slate-400 text-lg">
           In my first year of high school, I built{' '}
-          <a href="https://www.kweeksnews.com" className="link">
+          <Link href="https://www.kweeksnews.com" className="link">
             KweeksNews
-          </a>{' '}
+          </Link>{' '}
           for my school organization. The COVID-19 pandemic hit my country just moments after,
           forcing school learning to be shifted entirely online. With a lot of free time at home, I
           learned many things about Machine Learning, Web Development, Mobile Development, and

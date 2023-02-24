@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Config } from '@/config';
 
 export function Contact() {
@@ -13,15 +14,15 @@ export function Contact() {
         email me.
       </p>
 
-      <a href={`mailto:${Config.contact.business}`} className="button mt-8">
+      <Link href={`mailto:${Config.contact.business}`} className="button mt-8">
         Get in touch
-      </a>
+      </Link>
 
       <p className="mt-8 text-slate-400 text-md text-center">
         Not a business inquiry? Use{' '}
-        <a href={`mailto:${Config.contact.personal}`} className="link">
+        <Link href={`mailto:${Config.contact.personal}`} className="link">
           my personal inbox
-        </a>{' '}
+        </Link>{' '}
         instead.
       </p>
     </section>
