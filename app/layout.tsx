@@ -6,7 +6,7 @@ import { Header } from '@/presentation/components/shared/Header';
 import { Metadata } from 'next';
 import { Menu } from '@/presentation/components/shared/Menu';
 import { ReactNode } from 'react';
-import { Source_Code_Pro, Ubuntu } from '@next/font/google';
+import { Source_Code_Pro, Ubuntu } from 'next/font/google';
 
 type Props = {
   children: ReactNode;
