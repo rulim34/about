@@ -9,7 +9,7 @@ export function Footer() {
           Ahmad Rulim
         </Link>
         . Open Sourced at{' '}
-        <Link href="https://github.com/rulim34/about.git" className="link">
+        <Link href="https://github.com/rulim34/about.git" target="_blank" className="link">
           GitHub
         </Link>
         .

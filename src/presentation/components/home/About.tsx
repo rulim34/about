@@ -25,7 +25,7 @@ export function About({ skills }: Props) {
 
         <p className="mt-4 text-slate-400 text-lg">
           In my first year of high school, I built{' '}
-          <Link href="https://www.kweeksnews.com" className="link">
+          <Link href="https://www.kweeksnews.com" target="_blank" className="link">
             KweeksNews
           </Link>{' '}
           for my school organization. The COVID-19 pandemic hit my country just moments after,
