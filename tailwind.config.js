@@ -18,6 +18,10 @@ module.exports = {
         'cornflower-blue': '#6f8cf7',
         'vampire-black': '#050505',
       },
+      fontFamily: {
+        sans: ['var(--font-ubuntu)', ...defaultTheme.fontFamily.sans],
+        mono: ['var(--font-source-code-pro)', ...defaultTheme.fontFamily.mono],
+      },
     },
   },
   plugins: [],

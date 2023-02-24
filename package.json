@@ -16,10 +16,13 @@
     "format": "next lint --fix"
   },
   "dependencies": {
+    "@icons-pack/react-simple-icons": "^6.3.0",
     "@next/font": "13.2.1",
+    "hamburger-react": "^2.5.0",
     "next": "13.2.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-feather": "^2.0.10"
   },
   "devDependencies": {
     "@types/node": "18.14.1",
