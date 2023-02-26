@@ -1,5 +1,4 @@
 import '@/presentation/styles/globals.css';
-import Link from 'next/link';
 import { Config } from '@/config';
 import { Footer } from '@/presentation/components/shared';
 import { Header } from '@/presentation/components/shared/Header';
@@ -65,12 +64,12 @@ export default function RootLayout({ children }: Props) {
   return (
     <html lang="en-UK" className={`${ubuntu.variable} ${sourceCodePro.variable}`}>
       <body>
-        <Link
+        <a
           href="#content"
           className="button absolute top-2 -left-96 z-[-99] focus:left-2 focus:z-50 active:left-2 active:z-50"
         >
           Skip to Content
-        </Link>
+        </a>
 
         <div className="bg-vampire-black">
           <Header />
