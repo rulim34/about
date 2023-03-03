@@ -1,11 +1,8 @@
+import { SocialMedia } from '@/domain/entities';
 import { Social } from '.';
 
 type Props = {
-  socialMedia?: {
-    icon: string;
-    name: string;
-    url: string;
-  }[];
+  socialMedia?: SocialMedia[];
 };
 
 export function Hero({ socialMedia }: Props) {
