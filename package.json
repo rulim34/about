@@ -16,7 +16,7 @@
     "format": "next lint --fix"
   },
   "dependencies": {
-    "@icons-pack/react-simple-icons": "6.3.0",
+    "@icons-pack/react-simple-icons": "7.1.0",
     "hamburger-react": "2.5.0",
     "next": "13.2.4",
     "react": "18.2.0",
