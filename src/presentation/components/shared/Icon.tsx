@@ -1,12 +1,12 @@
 import {
-  Sifacebook,
-  Sigithub,
-  Siinstagram,
-  Silinkedin,
-  Sistackoverflow,
-  Sitelegram,
-  Sitwitter,
-  Sixdadevelopers,
+  SiFacebook,
+  SiGithub,
+  SiInstagram,
+  SiLinkedin,
+  SiStackoverflow,
+  SiTelegram,
+  SiTwitter,
+  SiXdadevelopers,
 } from '@icons-pack/react-simple-icons';
 
 type Props = {
@@ -17,21 +17,21 @@ type Props = {
 export function Icon({ name, className }: Props) {
   switch (name) {
     case 'facebook':
-      return <Sifacebook title="Facebook" className={className} />;
+      return <SiFacebook title="Facebook" className={className} />;
     case 'github':
-      return <Sigithub title="GitHub" className={className} />;
+      return <SiGithub title="GitHub" className={className} />;
     case 'instagram':
-      return <Siinstagram title="Instagram" className={className} />;
+      return <SiInstagram title="Instagram" className={className} />;
     case 'linkedin':
-      return <Silinkedin title="LinkedIn" className={className} />;
+      return <SiLinkedin title="LinkedIn" className={className} />;
     case 'stack-overflow':
-      return <Sistackoverflow title="Stack Overflow" className={className} />;
+      return <SiStackoverflow title="Stack Overflow" className={className} />;
     case 'telegram':
-      return <Sitelegram title="Telegram" className={className} />;
+      return <SiTelegram title="Telegram" className={className} />;
     case 'twitter':
-      return <Sitwitter title="Twitter" className={className} />;
+      return <SiTwitter title="Twitter" className={className} />;
     case 'xda-developers':
-      return <Sixdadevelopers title="XDA Developers" className={className} />;
+      return <SiXdadevelopers title="XDA Developers" className={className} />;
     default:
       throw new Error(`${name} icon is not found`);
   }
