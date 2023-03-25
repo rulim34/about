@@ -16,7 +16,7 @@
     "format": "next lint --fix"
   },
   "dependencies": {
-    "@icons-pack/react-simple-icons": "7.1.0",
+    "@icons-pack/react-simple-icons": "7.1.1",
     "hamburger-react": "2.5.0",
     "next": "13.2.4",
     "react": "18.2.0",
@@ -24,16 +24,16 @@
     "react-feather": "2.0.10"
   },
   "devDependencies": {
-    "@types/node": "18.15.3",
+    "@types/node": "18.15.5",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
     "autoprefixer": "10.4.14",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
-    "eslint-config-prettier": "8.7.0",
+    "eslint-config-prettier": "8.8.0",
     "eslint-plugin-prettier": "4.2.1",
     "postcss": "8.4.21",
-    "prettier": "2.8.4",
+    "prettier": "2.8.6",
     "tailwindcss": "3.2.7",
     "typescript": "4.9.5"
   }
