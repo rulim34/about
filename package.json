@@ -16,7 +16,7 @@
     "format": "next lint --fix"
   },
   "dependencies": {
-    "@icons-pack/react-simple-icons": "7.1.1",
+    "@icons-pack/react-simple-icons": "7.2.0",
     "hamburger-react": "2.5.0",
     "next": "13.2.4",
     "react": "18.2.0",
@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "@types/node": "18.15.11",
-    "@types/react": "18.0.31",
+    "@types/react": "18.0.33",
     "@types/react-dom": "18.0.11",
     "autoprefixer": "10.4.14",
     "eslint": "8.37.0",
