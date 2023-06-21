@@ -32,11 +32,6 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
-  },
   openGraph: {
     title: Config.site.title,
     description: Config.site.description,
