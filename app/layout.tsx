@@ -52,7 +52,7 @@ export const metadata: Metadata = {
 
 export default function Layout({ children }: Props) {
   return (
-    <html lang="en-UK" className={`${ubuntu.variable} ${sourceCodePro.variable}`}>
+    <html lang="en-UK" className={`!scroll-smooth ${ubuntu.variable} ${sourceCodePro.variable}`}>
       <body>
         <a
           href="#content"
