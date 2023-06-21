@@ -1,4 +1,4 @@
-import { SocialMedia, UrlMenu } from '@/domain/entities';
+import { PathMenu, SocialMedia, UrlMenu } from '@/domain/entities';
 
 export const Config: {
   site: {
@@ -9,7 +9,7 @@ export const Config: {
     locale: string;
     twitter: string;
   };
-  nav: UrlMenu[];
+  nav: (PathMenu | UrlMenu)[];
   socialMedia: SocialMedia[];
   contact: {
     email: string;
@@ -27,7 +27,7 @@ export const Config: {
   nav: [
     {
       name: 'About',
-      url: '/#about',
+      path: '/#about',
     },
     {
       name: 'Blog',

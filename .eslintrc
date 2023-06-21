@@ -6,5 +6,8 @@
   ],
   "globals": {
     "JSX": true
+  },
+  "rules": {
+    "no-prototype-builtins": "off"
   }
 }

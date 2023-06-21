@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import { UrlMenu } from '@/domain/entities';
+import { PathMenu, UrlMenu } from '@/domain/entities';
 
 type Props = {
-  menus?: UrlMenu[];
+  menus?: (PathMenu | UrlMenu)[];
 };
 
 export function Nav({ menus }: Props) {
@@ -10,10 +10,15 @@ export function Nav({ menus }: Props) {
     <nav className="md:flex">
       <ul className="hidden mr-3 text-center md:flex">
         {menus
-          ? menus.map(({ name, url }, i) => (
+          ? menus.map((menu, i) => (
               <li key={i} className="mx-3">
-                <Link href={url} className="navlink">
-                  {name}
+                <Link
+                  href={
+                    menu.hasOwnProperty('path') ? (menu as PathMenu).path : (menu as UrlMenu).url
+                  }
+                  className="navlink"
+                >
+                  {menu.name}
                 </Link>
               </li>
             ))

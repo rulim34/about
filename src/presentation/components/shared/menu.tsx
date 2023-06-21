@@ -1,12 +1,12 @@
 'use client';
 
 import Link from 'next/link';
+import { PathMenu, UrlMenu } from '@/domain/entities';
 import { Squash as Hamburger } from 'hamburger-react';
 import { useState } from 'react';
-import { UrlMenu } from '@/domain/entities';
 
 type Props = {
-  menus?: UrlMenu[];
+  menus?: (PathMenu | UrlMenu)[];
 };
 
 export function Menu({ menus }: Props) {
@@ -30,10 +30,15 @@ export function Menu({ menus }: Props) {
       >
         <ul className="w-28 mb-14 text-center">
           {menus
-            ? menus.map(({ name, url }, i) => (
+            ? menus.map((menu, i) => (
                 <li key={i} className="my-2">
-                  <Link href={url} className="navlink">
-                    {name}
+                  <Link
+                    href={
+                      menu.hasOwnProperty('path') ? (menu as PathMenu).path : (menu as UrlMenu).url
+                    }
+                    className="navlink"
+                  >
+                    {menu.name}
                   </Link>
                 </li>
               ))
