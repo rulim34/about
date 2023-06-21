@@ -14,17 +14,9 @@ export function Contact() {
         email me.
       </p>
 
-      <Link href={`mailto:${Config.contact.business}`} className="button mt-8">
+      <Link href={`mailto:${Config.contact.email}`} className="button mt-8">
         Get in touch
       </Link>
-
-      <p className="mt-8 text-slate-400 text-md text-center">
-        Not a business inquiry? Use{' '}
-        <Link href={`mailto:${Config.contact.personal}`} className="link">
-          my personal inbox
-        </Link>{' '}
-        instead.
-      </p>
     </section>
   );
 }

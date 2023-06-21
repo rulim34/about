@@ -10,10 +10,9 @@ export const Config: {
     twitter: string;
   };
   nav: UrlMenu[];
-  social: SocialMedia[];
+  socialMedia: SocialMedia[];
   contact: {
-    personal: string;
-    business: string;
+    email: string;
   };
   skills: string[];
 } = {
@@ -35,7 +34,7 @@ export const Config: {
       url: 'https://blog.rulim34.dev',
     },
   ],
-  social: [
+  socialMedia: [
     {
       icon: 'github',
       name: 'GitHub',
@@ -58,8 +57,7 @@ export const Config: {
     },
   ],
   contact: {
-    personal: 'personal@rulim34.dev',
-    business: 'business@rulim34.dev',
+    email: 'me@rulim34.dev',
   },
   skills: [
     'Dart',
