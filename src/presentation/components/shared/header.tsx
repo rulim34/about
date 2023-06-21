@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { Config } from '@/config';
-import { Nav } from '.';
+import { Nav } from './nav';
 import { useEffect, useState } from 'react';
 import { useScrollDirection } from '@/presentation/hooks';
 

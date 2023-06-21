@@ -1,9 +1,7 @@
 import '@/presentation/styles/globals.css';
 import { Config } from '@/config';
-import { Footer } from '@/presentation/components/shared';
-import { Header } from '@/presentation/components/shared/Header';
+import { Footer, Header, Menu } from '@/presentation/components/shared';
 import { Metadata } from 'next';
-import { Menu } from '@/presentation/components/shared/Menu';
 import { ReactNode } from 'react';
 import { Source_Code_Pro, Ubuntu } from 'next/font/google';
 
@@ -60,7 +58,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: Props) {
+export default function Layout({ children }: Props) {
   return (
     <html lang="en-UK" className={`${ubuntu.variable} ${sourceCodePro.variable}`}>
       <body>

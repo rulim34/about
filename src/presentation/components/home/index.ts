@@ -1,4 +1,3 @@
-export * from './About';
-export * from './Contact';
-export * from './Hero';
-export * from './Social';
+export * from './about';
+export * from './contact';
+export * from './hero';

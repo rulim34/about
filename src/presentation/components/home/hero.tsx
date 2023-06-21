@@ -1,5 +1,5 @@
 import { SocialMedia } from '@/domain/entities';
-import { Social } from '.';
+import { SocialMediaList } from './social-media-list';
 
 type Props = {
   socialMedia?: SocialMedia[];
@@ -19,7 +19,7 @@ export function Hero({ socialMedia }: Props) {
         Currently based in Indonesia &#127470;&#127465;
       </p>
 
-      {socialMedia && <Social className="mt-7" socialMedia={socialMedia} />}
+      {socialMedia && <SocialMediaList className="mt-7" socialMedia={socialMedia} />}
     </section>
   );
 }

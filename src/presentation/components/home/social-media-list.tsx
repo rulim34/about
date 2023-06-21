@@ -7,7 +7,7 @@ type Props = {
   socialMedia: SocialMedia[];
 };
 
-export function Social({ className, socialMedia }: Props) {
+export function SocialMediaList({ className, socialMedia }: Props) {
   return (
     <div className={className}>
       <ul className="flex flex-row flex-wrap items-center list-none">
