@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { UrlMenu } from '@/domain/entities';
 
 type Props = {
@@ -11,17 +12,17 @@ export function Nav({ menus }: Props) {
         {menus
           ? menus.map(({ name, url }, i) => (
               <li key={i} className="mx-3">
-                <a href={url} className="navlink">
+                <Link href={url} className="navlink">
                   {name}
-                </a>
+                </Link>
               </li>
             ))
           : null}
       </ul>
 
-      <a href="#contact" className="button md:block">
+      <Link href="/#contact" scroll={false} className="button md:block">
         Contact
-      </a>
+      </Link>
     </nav>
   );
 }

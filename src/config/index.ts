@@ -27,7 +27,7 @@ export const Config: {
   nav: [
     {
       name: 'About',
-      url: '#about',
+      url: '/#about',
     },
     {
       name: 'Blog',

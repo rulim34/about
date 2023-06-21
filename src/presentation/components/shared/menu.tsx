@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { Squash as Hamburger } from 'hamburger-react';
 import { useState } from 'react';
 import { UrlMenu } from '@/domain/entities';
@@ -31,9 +32,9 @@ export function Menu({ menus }: Props) {
           {menus
             ? menus.map(({ name, url }, i) => (
                 <li key={i} className="my-2">
-                  <a href={url} className="navlink">
+                  <Link href={url} className="navlink">
                     {name}
-                  </a>
+                  </Link>
                 </li>
               ))
             : null}
