@@ -16,6 +16,7 @@ export function Nav({ menus }: Props) {
                   href={
                     menu.hasOwnProperty('path') ? (menu as PathMenu).path : (menu as UrlMenu).url
                   }
+                  scroll={menu.hasOwnProperty('path') ? (menu as PathMenu).scroll : true}
                   className="navlink"
                 >
                   {menu.name}

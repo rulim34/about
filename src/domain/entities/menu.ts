@@ -9,10 +9,12 @@ export class Menu {
 
 export class PathMenu extends Menu {
   public readonly path: string;
+  public readonly scroll?: boolean;
 
-  public constructor(name: string, path: string) {
+  public constructor(name: string, path: string, scroll?: boolean) {
     super(name);
     this.path = path;
+    this.scroll = scroll;
   }
 }
 

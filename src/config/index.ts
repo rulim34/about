@@ -28,6 +28,7 @@ export const Config: {
     {
       name: 'About',
       path: '/#about',
+      scroll: false,
     },
     {
       name: 'Blog',
