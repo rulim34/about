@@ -24,7 +24,7 @@
     "react-feather": "2.0.10"
   },
   "devDependencies": {
-    "@types/node": "18.17.9",
+    "@types/node": "18.17.11",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
     "@typescript-eslint/eslint-plugin": "5.62.0",
